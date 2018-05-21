@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileCallInfoTableViewCell" rowHeight="105" id="KGk-i7-Jjw" customClass="ProfileCallInfoTableViewCell" customModule="Dolphin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_call_info" translatesAutoresizingMaskIntoConstraints="NO" id="QvX-vY-r8v">
+                        <rect key="frame" x="12" y="30" width="13" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通话信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djS-UM-Sfn">
+                        <rect key="frame" x="30" y="28.5" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好评率: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cib-o2-WIt">
+                        <rect key="frame" x="12" y="54.5" width="47.5" height="10.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkU-t5-qeb">
+                        <rect key="frame" x="59.5" y="52.5" width="21" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSK-pc-tgz">
+                        <rect key="frame" x="80.5" y="52.5" width="11" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="本周通话时长: 55分10秒" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BI-oE-xGa">
+                        <rect key="frame" x="12" y="70" width="296" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_free" translatesAutoresizingMaskIntoConstraints="NO" id="bwB-r1-cpA">
+                        <rect key="frame" x="256" y="44.5" width="52" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-f3-LEW">
+                        <rect key="frame" x="283" y="69.5" width="25" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itf-No-6Xq" userLabel="lineView">
+                        <rect key="frame" x="12" y="0.0" width="296" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NM3-bE-gxr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CkU-t5-qeb" firstAttribute="centerY" secondItem="cib-o2-WIt" secondAttribute="centerY" id="3Ec-VO-iI7"/>
+                    <constraint firstAttribute="trailing" secondItem="itf-No-6Xq" secondAttribute="trailing" constant="12" id="422-Uw-AkR"/>
+                    <constraint firstItem="QvX-vY-r8v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="4LC-c6-6pd"/>
+                    <constraint firstItem="QvX-vY-r8v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="5Ai-1T-PmD"/>
+                    <constraint firstItem="iJg-f3-LEW" firstAttribute="trailing" secondItem="bwB-r1-cpA" secondAttribute="trailing" id="7My-Jz-KAX"/>
+                    <constraint firstItem="itf-No-6Xq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DDN-U9-ORr"/>
+                    <constraint firstAttribute="bottom" secondItem="8BI-oE-xGa" secondAttribute="bottom" constant="20" id="I9a-RC-FVO"/>
+                    <constraint firstItem="djS-UM-Sfn" firstAttribute="centerY" secondItem="QvX-vY-r8v" secondAttribute="centerY" id="LOc-hU-QHs"/>
+                    <constraint firstItem="itf-No-6Xq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Lgf-IG-xqx"/>
+                    <constraint firstItem="oSK-pc-tgz" firstAttribute="leading" secondItem="CkU-t5-qeb" secondAttribute="trailing" id="Pyr-Uk-8Z5"/>
+                    <constraint firstItem="cib-o2-WIt" firstAttribute="leading" secondItem="QvX-vY-r8v" secondAttribute="leading" id="Qhp-cy-iok"/>
+                    <constraint firstItem="iJg-f3-LEW" firstAttribute="top" secondItem="bwB-r1-cpA" secondAttribute="bottom" constant="5" id="W7y-Oq-PF7"/>
+                    <constraint firstAttribute="trailing" secondItem="bwB-r1-cpA" secondAttribute="trailing" constant="12" id="beb-IP-F3F"/>
+                    <constraint firstItem="bwB-r1-cpA" firstAttribute="top" secondItem="djS-UM-Sfn" secondAttribute="bottom" id="cX2-Zh-I7l"/>
+                    <constraint firstItem="CkU-t5-qeb" firstAttribute="leading" secondItem="cib-o2-WIt" secondAttribute="trailing" id="enC-Ia-wwa"/>
+                    <constraint firstItem="cib-o2-WIt" firstAttribute="top" secondItem="djS-UM-Sfn" secondAttribute="bottom" constant="10" id="epC-7g-zES"/>
+                    <constraint firstItem="oSK-pc-tgz" firstAttribute="centerY" secondItem="CkU-t5-qeb" secondAttribute="centerY" id="fSi-wo-cLt"/>
+                    <constraint firstItem="8BI-oE-xGa" firstAttribute="top" secondItem="cib-o2-WIt" secondAttribute="bottom" constant="5" id="iN5-eS-55i"/>
+                    <constraint firstItem="djS-UM-Sfn" firstAttribute="leading" secondItem="QvX-vY-r8v" secondAttribute="trailing" constant="5" id="lrW-If-LuQ"/>
+                    <constraint firstItem="8BI-oE-xGa" firstAttribute="leading" secondItem="cib-o2-WIt" secondAttribute="leading" id="mJt-7S-Xtl"/>
+                    <constraint firstAttribute="trailing" secondItem="8BI-oE-xGa" secondAttribute="trailing" constant="12" id="tAV-fP-JCY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="percentLabel" destination="CkU-t5-qeb" id="zJt-xy-4ri"/>
+                <outlet property="timeLabel" destination="8BI-oE-xGa" id="Krt-RJ-oHP"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="13.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="status_free" width="52" height="20"/>
+        <image name="user_call_info" width="13" height="13"/>
+    </resources>
+</document>
