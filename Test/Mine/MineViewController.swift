@@ -136,14 +136,14 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row = sections[indexPath.section][indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: row.reuseIdentifier)!
-        row.update(cell)
+        let item = sections[indexPath.section][indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: item.reuseIdentifier)!
+        item.configure(cell)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let row = sections[indexPath.section][indexPath.row]
-        guard let callBack = row.callBack else {
+        let item = sections[indexPath.section][indexPath.row]
+        guard let callBack = item.callBack else {
             return
         }
         callBack()

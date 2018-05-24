@@ -12,7 +12,7 @@ protocol Configurable {
     var reuseIdentifier: String { get }
     var cellHeight: CGFloat { get }
     var callBack: (() -> (Void))? {set get}
-    func update(_ cell: UITableViewCell)
+    func configure(_ cell: UITableViewCell)
 }
 
 protocol Updatable {
@@ -42,7 +42,7 @@ struct TableViewItemBuilder<T> where T: Updatable, T: UITableViewCell {
     }
 }
 extension TableViewItemBuilder: Configurable {
-    func update(_ cell: UITableViewCell) {
+    func configure(_ cell: UITableViewCell) {
         if let cell = cell as? T {
             
             cell.update(model)

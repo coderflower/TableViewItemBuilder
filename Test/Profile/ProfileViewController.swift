@@ -25,7 +25,7 @@ import UIKit
 /// 个人详情页
 class ProfileViewController: UIViewController {
     let header = ProfileTableViewHeader.xibView()
-    var rows = [Configurable]()
+    var items = [Configurable]()
    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class ProfileViewController: UIViewController {
             ProfileGiftTableViewCell.Model.Gift(icon: "tab_Mind_on", count: 10),
             ])
         let signModel = ProfileSignTableViewCell.Model(signs: ["测试标签","测试标签","测试标签","测试标签","测试标签","测试标签"])
-        rows = [
+        items = [
             TableViewItemBuilder<ProfileCallInfoTableViewCell>(model: ProfileCallInfoTableViewCell.Model(percentage: "70", timeString: "55分46秒")),
             TableViewItemBuilder<ProfileSignatureTableViewCell>(model: ProfileSignatureTableViewCell.Model(signature: "无个性,不签名!")),
             TableViewItemBuilder<ProfileGiftTableViewCell>(model: model, cellHeight: (55 * 2 + 65)),
@@ -75,16 +75,16 @@ class ProfileViewController: UIViewController {
 
 extension ProfileViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rows.count
+        return items.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row = rows[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: row.reuseIdentifier)!
-        row.update(cell)
+        let item = items[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: item.reuseIdentifier)!
+        item.configure(cell)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let row = rows[indexPath.row]
+        let row = items[indexPath.row]
         return row.cellHeight
     }
 }
